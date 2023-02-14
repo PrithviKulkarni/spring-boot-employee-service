@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Error page</title>
+</head>
+<body>
+	<hr>
+	<h1>Error Code: <span th:text="${errorCode}"></span></h1>
+	<h3 th:text="${errorMessage}"></h3>
+	<a th:href="@{allEmployees}">all employees</a>
+	<hr>
+</body>
+</html>
